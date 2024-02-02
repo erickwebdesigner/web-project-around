@@ -5,7 +5,7 @@
     width: 430px;
     height: 322px;
     border: 1px;
-    margin: 100px 200PX 0px;
+    margin: 0px 200PX 0px;
     align-items: stretch;
 }
 
@@ -22,10 +22,10 @@
     width: 26px;
     height: 26px;
     font-size: 26px;
-    margin-left: 430px;    
+    margin-left: 400px;    
 }
 
-.formconteiner {
+.formcontainer {
     display:flex;
     flex-direction: column;
     width: 430px;
@@ -36,7 +36,7 @@
     border-radius: 5px;
 }
 
-.formtitle {
+.formtitle{
     margin: 34px auto 54px 36px;
     width: 330px;
     height: 23px;
@@ -64,12 +64,6 @@
     Opacity:20%;
 }
 
-.formsubmit:hover {
-    transition: 0.2s;
-    cursor: pointer;
-    opacity: 60%;
-}
-
 .formsubmit {
     display: flex;
     width: 250px;
@@ -83,76 +77,4 @@
     font-weight: 400;
     line-height: 22px;
     text-align: center;
-}
-
-
-
-
-@media  screen and (max-width: 880px) {
-    .form {
-       margin:  100px 100px 0px;
-       align-items: center;
-    }
-
-    .formsubmit {
-       margin: 0px auto 25px;
-    }
-}
-
-@media screen and (max-width: 720px) {
-    .form {
-        margin:  100px 50px 0px;
-    }
-    
-    .formsubmit {
-        display: flex;
-        width: 238px;
-        height: 46px;
-        
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .form{
-        margin: auto;
-        align-self: center;
-    }
-    .formconteiner{
-        width: 282px;
-        height: 330px;
-        align-self: center;
-    }
-
-    .formclose{
-        margin-left: 250px;
-        margin-bottom: 14px;
-    }
-
-    .formtitle {
-        width: 238px;
-        margin-left: 22px;
-    }
-
-    .formnameInput{
-        display: flex;
-        width: 238px;
-        margin: 0px auto 36px;
-    }
-
-    .formjobInput{
-        display: flex;
-        width: 238px;
-        margin: auto;
-    }
-
-    .formsubmit{
-        margin: 46px auto 25px;
-    }
-    
-}
-
-@media screen and (max-width: 430px) {
-    .form {
-        margin:0px;
-    }
 }
