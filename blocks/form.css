@@ -1,12 +1,11 @@
 .form {
-    display: flex;
+    display: none;
     position: fixed;
     flex-direction: column;
     width: 430px;
     height: 322px;
     border: 1px;
     margin: 0px 200PX 0px;
-    align-items: stretch;
 }
 
 .formclose:hover {
@@ -77,4 +76,16 @@
     font-weight: 400;
     line-height: 22px;
     text-align: center;
+}
+
+@media screen and (max-width: 880px) {
+   
+}
+
+@media screen and (max-width: 720px) {
+   
+}
+
+@media screen and (max-width: 375px) {
+    
 }
