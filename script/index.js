@@ -32,3 +32,4 @@ profbtn.addEventListener('click', ()=>{
 formclose.addEventListener('click', ()=>{
     closeform(formEdit)
 })
+
