@@ -1,11 +1,11 @@
 .form {
-    display: none;
+    display: flex;
     position: fixed;
     flex-direction: column;
     width: 430px;
     height: 322px;
     border: 1px;
-    margin: 0px 200PX 0px;
+    margin: 0px 200px 0px;
 }
 
 .formclose:hover {
@@ -79,13 +79,79 @@
 }
 
 @media screen and (max-width: 880px) {
-   
+   .form {
+    margin: 0px 150px 0px;
+   }
 }
 
 @media screen and (max-width: 720px) {
-   
+   .form{
+    margin: 0px 100px 0px;
+   }
+}
+
+@media  screen and (max-width: 660px) {
+    .form{
+        margin: auto;
+        
+    }
+}
+
+@media  screen and (max-width: 520px) {
+    .form{
+        margin: auto;
+    }
+    .formclose {
+        margin: auto 300px auto;
+    }
+
+    .formcontainer {
+        width: 330px;
+        height: 322px;
+
+    }
+    .formnameInput{
+        width: 280px;
+        height: 26px;
+        margin: auto 22px 30px;
+    }
+    .formjobInput {
+        width: 280px;
+        height: 26px;
+        margin: auto 22px 46px;
+    }
+    .formsubmit {
+        width: 238px;
+        height: 46px;
+    }
+    
 }
 
 @media screen and (max-width: 375px) {
-    
+    .form {
+        margin: auto 20px;
+    }
+    .formclose {
+        margin: auto 250px auto;
+    }
+
+    .formcontainer {
+        width: 282px;
+        height: 322px;
+
+    }
+    .formnameInput{
+        width: 238px;
+        height: 26px;
+        margin: auto 22px 30px;
+    }
+    .formjobInput {
+        width: 238px;
+        height: 26px;
+        margin: auto 22px 46px;
+    }
+    .formsubmit {
+        width: 238px;
+        height: 46px;
+    }
 }
