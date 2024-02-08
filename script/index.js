@@ -7,6 +7,8 @@ const job = document.querySelector(`.profileprof`)
 const nameInput = document.querySelector(`.formnameInput`)
 const jobInput = document.querySelector(`.formjobInput`)
 
+
+
 function openform(form) {
     form.classList.add(".form")
     form.style.display = 'flex'
