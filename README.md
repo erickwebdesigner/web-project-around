@@ -40,7 +40,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests o
 
 ## Autor
 
-[Seu Nome](https://github.com/erickwebdesigner/web-project-around)
+[Erick da Silva André](https://github.com/erickwebdesigner/web-project-around)
 
 ## Licença
 
