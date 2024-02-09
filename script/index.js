@@ -1,34 +1,30 @@
 const profbtn = document.querySelector('.profilebtn')
 const formEdit = document.querySelector('.form')
-const formclose = document.querySelector('.formclose')
+const formclose = document.querySelector('.form__close')
 
-const nameprofile = document.querySelector(`.profilename`)
-const job = document.querySelector(`.profileprof`)
-const nameInput = document.querySelector(`.formnameInput`)
-const jobInput = document.querySelector(`.formjobInput`)
-
+const nameprofile = document.querySelector('.profilename')
+const jobprofile = document.querySelector('.profileprof')
+const formname = document.querySelector('.form__name-Input')
+const formjob = document.querySelector('.form__job-Input')
 
 
 function openform(form) {
     form.classList.add(".form")
     form.style.display = 'flex'
-    
-    console.log(form)
-    console.log(">>>>>>>>>>>>>sstou aberto")
+    formname.value = nameprofile.innerHTML
+    formjob.value = jobprofile.innerHTML
 }
 
 function closeform(form) {
     form.classList.remove('.form')
     form.style.display = 'none'
-    console.log('>>>>>>>>>>>>>> estou fechado')
-    
+
 }
- 
+
 profbtn.addEventListener('click', ()=>{
-    nameInput.value = nameprofile.textContent
-    jobInput.value = job.textContent
+
     openform(formEdit)
-    
+
 })
 
 formclose.addEventListener('click', ()=>{

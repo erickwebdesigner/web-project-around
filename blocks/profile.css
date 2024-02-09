@@ -80,7 +80,7 @@
         line-height: 27px;
         text-align: center;
     }
-    
+
     .profileprof{
         margin-top: 10px;
     }
@@ -94,7 +94,7 @@
     .profile{
         flex-direction: column;
     }
-    
+
     .profileimg {
         margin: auto;
     }
@@ -116,7 +116,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
     .profile {
         width: 320px;
         margin: auto;
@@ -131,4 +131,3 @@
         margin: 30px 100px 36px;
     }
 }
-    

@@ -1,5 +1,5 @@
 .form {
-    display: none;
+    display: flex;
     position: fixed;
     flex-direction: column;
     width: 430px;
@@ -8,23 +8,23 @@
     margin: 0px 200px 0px;
 }
 
-.formclose:hover {
+.form__close:hover {
     transition: 0.2s;
     cursor: pointer;
     opacity: 60%;
 }
 
-.formclose {
+.form__close {
     color: #fff;
     background-color: #000000;
     border: 0px solid #000000;
     width: 26px;
     height: 26px;
     font-size: 26px;
-    margin-left: 400px;    
+    margin-left: 400px;
 }
 
-.formcontainer {
+.form__container {
     display:flex;
     flex-direction: column;
     width: 430px;
@@ -35,7 +35,7 @@
     border-radius: 5px;
 }
 
-.formtitle{
+.form__title {
     margin: 34px auto 54px 36px;
     width: 330px;
     height: 23px;
@@ -45,27 +45,9 @@
     text-align: left;
 }
 
-.formnameInput{
-    margin: 0px auto 54px 36px;
-    width: 358px;
-    height: 27.26px;
-    border: 0px;
-    border-bottom: 1px solid #545454;
-    color: #9c9999;
-}
-
-.formjobInput {
-    margin: 0px auto 54px 36px;
-    width: 358px;
-    height: 27.26px;
-    border: 0px;
-    border-bottom: 1px solid #545454;
-    color: #9c9999;
-}
-
-.formsubmit {
+.form__submit {
     display: flex;
-    width: 250px;
+    width: 358px;
     height: 50px;
     border-radius: 2px;
     margin: 0px auto 36px;
@@ -76,6 +58,28 @@
     font-weight: 400;
     line-height: 22px;
     text-align: center;
+}
+
+.form__name-Input{
+    margin: 0px auto 54px 36px;
+    width: 358px;
+    height: 27.26px;
+    border: 0px;
+    border-bottom: 1px solid #545454;
+    color: #9c9999;
+}
+
+.form__job-Input {
+    margin: 0px auto 54px 36px;
+    width: 358px;
+    height: 27.26px;
+    border: 0px;
+    border-bottom: 1px solid #545454;
+    color: #9c9999;
+}
+
+.form__submit-title{
+    margin: auto;
 }
 
 @media screen and (max-width: 880px) {
@@ -93,64 +97,35 @@
 @media  screen and (max-width: 660px) {
     .form{
         margin: auto;
-        
+
     }
 }
 
-@media  screen and (max-width: 520px) {
-    .form{
-        margin: auto;
-    }
-    .formclose {
-        margin: auto 300px auto;
-    }
 
-    .formcontainer {
-        width: 330px;
-        height: 322px;
-
-    }
-    .formnameInput{
-        width: 280px;
-        height: 26px;
-        margin: auto 22px 30px;
-    }
-    .formjobInput {
-        width: 280px;
-        height: 26px;
-        margin: auto 22px 46px;
-    }
-    .formsubmit {
-        width: 238px;
-        height: 46px;
-    }
-    
-}
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 550px) {
     .form {
         margin: auto 20px;
     }
-    .formclose {
+    .form__close {
         margin: auto 250px auto;
     }
 
-    .formcontainer {
+    .form__container {
         width: 282px;
         height: 322px;
 
     }
-    .formnameInput{
+    .form__name-Input{
         width: 238px;
         height: 26px;
         margin: auto 22px 30px;
     }
-    .formjobInput {
+    .form__job-Input {
         width: 238px;
         height: 26px;
         margin: auto 22px 46px;
     }
-    .formsubmit {
+    .form__submit {
         width: 238px;
         height: 46px;
     }
