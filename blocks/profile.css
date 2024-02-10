@@ -12,17 +12,17 @@
     margin: 45px auto 50px;
 }
 
-.profileimg {
+.profile__img {
     max-width: 120px;
     max-height: 120px;
     border-radius: 50%;
 }
 
-.profileinfo {
+.profile__info {
     display: flex;
     flex-direction: column;
 }
-.profilename {
+.profile__name {
     display: block;
     max-width: 373px;
     max-height: 39px;
@@ -34,17 +34,17 @@
 
 }
 
-.profilebtn:hover{
+.profile__btn:hover{
     transition: 0.2s;
     cursor: pointer;
     opacity: 60%;
 }
-.profilebtn {
+.profile__btn {
     border: 1px solid white;
     width: 24px;
 }
 
-.profileprof{
+.profile__prof{
     max-width: 373px;
     max-height: 22px;
     margin: 16px 0px 21px 30px;
@@ -54,13 +54,13 @@
     text-align: left;
 }
 
-.profilesub:hover{
+.profile__sub:hover{
     transition: 0.2s;
     cursor: pointer;
     opacity: 60%;
 }
 
-.profilesub{
+.profile__sub{
     width: 150px;
     height: 50px;
     margin: 22px 0px 0px 165px;
@@ -75,17 +75,17 @@
         margin: 45px 50px 50px;
     }
 
-    .profilemame{
+    .profile__name{
         font-size: 32px;
         line-height: 27px;
         text-align: center;
     }
 
-    .profileprof{
+    .profile__prof{
         margin-top: 10px;
     }
 
-    .profilesub{
+    .profile__sub{
         margin-left: auto;
     }
 }
@@ -95,21 +95,21 @@
         flex-direction: column;
     }
 
-    .profileimg {
+    .profile__img {
         margin: auto;
     }
 
-    .profilename {
+    .profile__name {
         max-height: 60px;
         margin: auto;
         margin-top: 30px;
     }
 
-    .profileprof {
+    .profile__prof {
         text-align: center;
     }
 
-    .profilesub {
+    .profile__sub {
         width: 282px;
         margin: auto;
         margin-top: 35px;
@@ -121,12 +121,12 @@
         width: 320px;
         margin: auto;
     }
-    .profilename{
+    .profile__name{
         width: 320px;
 
     }
 
-    .profilesub {
+    .profile__sub {
         align-self: center;
         margin: 30px 100px 36px;
     }
