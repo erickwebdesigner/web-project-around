@@ -1,5 +1,5 @@
 .form {
-    display: none;
+    display: flex;
     position: fixed;
     flex-direction: column;
     width: 430px;
@@ -46,7 +46,7 @@
 }
 
 .form__submit {
-    display: flex;
+    display: block;
     width: 358px;
     height: 50px;
     border-radius: 2px;
