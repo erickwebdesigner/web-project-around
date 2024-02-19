@@ -4,39 +4,41 @@ const formclose = document.querySelector('.form__close')
 
 const formElement = document.querySelector('.form')
 
-function openform(form) {
-  form.classList.add(".form")
-  form.style.display = 'flex'
+const nameInput = document.querySelector('.form__name-Input')
+const jobInput = document.querySelector('.form__job-Input')
+const nameprofile = document.querySelector('.profile__name')
+const jobprofile = document.querySelector('.profile__prof')
+
+nameprofile.textContent = 'Jacques Costeau'
+jobprofile.textContent = 'Explorador'
+
+function openForm() {
+  if (formEdit.classList.contains('form__open')) {
+      formEdit.classList.remove('form__open');
+  } else {
+      formEdit.classList.add('form__open');
+  }
 }
 
-function handleProfileFormSubmit(evt) {
-
-    evt.preventDefault();
-
-    const nameInput = document.querySelector('.form__name-Input')
-    const jobInput = document.querySelector('.form__job-Input')
-
-    const nameprofile = document.querySelector('.profile__name')
-    const jobprofile = document.querySelector('.profile__prof')
-
-    nameprofile.textContent = nameInput.value
-    jobprofile.textContent = jobInput.value
+function closeForm() {
+  formEdit.classList.remove('form__open');
 }
 
-function closeform (form){
-  form.classList.remove('.form')
-  form.style.display = 'none'
+function handleSubmit(event) {
+  event.preventDefault()
 
+  nameprofile.textContent = nameInput.value;
+  jobprofile.textContent = jobInput.value;
+
+
+  closeForm();
 }
-profbtn.addEventListener('click', ()=>{
-
-  openform(formEdit)
-
-})
-
-formclose.addEventListener('click', ()=>{
-  closeform(formEdit)
-})
 
 
-formElement.addEventListener('submit', handleProfileFormSubmit)
+profbtn.addEventListener('click', openForm);
+
+
+formclose.addEventListener('click', closeForm);
+
+
+formElement.addEventListener('submit', handleSubmit);

@@ -1,12 +1,20 @@
 .form {
-    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
     position: fixed;
     flex-direction: column;
     width: 430px;
     height: 322px;
     border: 1px;
-    margin: 0px 200px 0px;
+    justify-self: center;
 }
+
+.form__open {
+  opacity: 1;
+  pointer-events: visible;
+}
+
 
 .form__close:hover {
     transition: 0.2s;
@@ -14,14 +22,18 @@
     opacity: 60%;
 }
 
+input{
+  width: 40px;
+  height: 40px;
+}
 .form__close {
+    width: 40px;
+    height:40px;
+    border: 0px;
+    font-size: 40px;
     color: #fff;
     background-color: #000000;
-    border: 0px solid #000000;
-    width: 26px;
-    height: 26px;
-    font-size: 26px;
-    margin-left: 400px;
+    margin-left: 420px;
 }
 
 .form__container {
@@ -84,19 +96,19 @@
 
 @media screen and (max-width: 880px) {
    .form {
-    margin: 0px 150px 0px;
+    margin-left: 200px;
    }
 }
 
 @media screen and (max-width: 720px) {
    .form{
-    margin: 0px 100px 0px;
+    margin-left: 100px;
    }
 }
 
 @media  screen and (max-width: 660px) {
     .form{
-        margin: auto;
+      margin: 0px 100px 0px;
 
     }
 }
@@ -104,10 +116,13 @@
 
 @media screen and (max-width: 550px) {
     .form {
-        margin: auto 20px;
+      margin: 0px 100px 0px 100px;
     }
     .form__close {
-        margin: auto 250px auto;
+      width: 26px;
+      height: 26px;
+      font-size: 26px;
+      margin-left: 250px;
     }
 
     .form__container {
@@ -131,3 +146,14 @@
     }
 }
 
+@media screen and (max-width: 420px) {
+  .form {
+    margin: 0px 40px 0px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .form {
+    margin: 0px 30px 0px;
+  }
+}

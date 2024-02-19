@@ -1,6 +1,6 @@
 .places {
     display: flex;
-    margin: 0px auto 0px;
+    margin: 50px auto 0px;
     justify-content: center;
 }
 
@@ -66,12 +66,14 @@
 @media screen and (max-width: 880px) {
     .places__box {
     grid-template-columns: repeat(2, 1fr);
+    margin: auto;
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 620px) {
     .places__box {
     display: flex;
     flex-direction: column;
+
     }
 }

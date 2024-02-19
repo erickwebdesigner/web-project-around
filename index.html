@@ -9,6 +9,9 @@
     <meta name="description" content="Portfolio de Erick Andre no Practicum">
     <meta name="keywords" content="HTML, CSS, JS">
     <meta name="author" content="Erick Andre">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Around The U.S.</title>
 </head>
 <body class="page">
@@ -16,29 +19,30 @@
     <img class="header__title" src="./images/Vectortitulo.png" alt="Around the U.S"/>
     </header>
 <main class="content">
-    <section class="profile">
-    <img src="./images/Avatarjacques.jpg" alt="image Jacques Costeau" class="profile__img">
+
+   <section class="profile">
+        <img class="profile__img " src="./images/Avatarjacques.jpg" alt="photo Jacques costeau">
         <div class="profile__info">
-            <h1 class="profile__name">Jacques Costeau
-            <input type="image" src="./images/Vectorlapis.png" class="profile__btn" alt="button profile">
-            </h1>
-            <p class="profile__prof">Explorar</p>
+        <h1 class="profile__name"></h1>
+        <button type="button" class="profile__btn"></button>
+        <p class="profile__prof"></p>
         </div>
-        <button type="button" class="profile__sub">+</button>
-    <form class="form">
-        <input type="button" value="X" class="form__close">
-        <div class="form__container">
-            <h1 class="form__title">Editar Perfil</h1>
-            <div>
-            <input type="text" class="form__name-Input" placeholder="Jacques Costeau">
-            </div>
-        <div>
-        <input type="text" class="form__job-Input" placeholder="Explorar">
-        </div>
-        <button type="submit" class="form__submit">Salvar</button>
-        </div>
-    </form>
+        <input type="button" class="profile__sub">
+        <form class="form">
+          <input type="button" value="X" class="form__close">
+          <div class="form__container">
+              <h1 class="form__title">Editar Perfil</h1>
+              <div>
+              <input type="text" class="form__name-Input" placeholder="Nome" required>
+              </div>
+          <div>
+          <input type="text" class="form__job-Input" placeholder="Sobre Mim" required>
+          </div>
+          <button type="submit" class="form__submit"><p class="form__submit-title">Salvar</p></button>
+          </div>
+      </form>
     </section>
+
 <section class="places">
     <ul class="places__box">
         <li class="places__exploited">
