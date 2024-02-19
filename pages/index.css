@@ -1,8 +1,22 @@
 
-
 @import url(../blocks/page.css);
 @import url(../blocks/header.css);
 @import url(../blocks/profile.css);
 @import url(../blocks/form.css);
 @import url(../blocks/places.css);
 @import url(../blocks/footer.css);
+
+@font-face {
+  font-family: Inter, sans-serif;
+  src: url(../static/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: Inter, sans-serif;
+  src: url(../static/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter, sans-serif;
+  src: url(../static/Inter-Black.ttf);
+}
