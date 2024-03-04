@@ -46,4 +46,15 @@ formElement.addEventListener('submit', handleSubmit);
 ///////////////////////////////////////////////////////////////////////////////////////
 // Referente a abetura e fechamento do fomulário do botão de troca das imagens inserção de novas fotos
 // titulo das fotos
+const profilebtnplace = document.querySelector('.profile_places-btn')
+const placesEdit = document.querySelector('.places__form')
 
+function placesForm() {
+  if (placesEdit.classList.contains('places__form__open')) {
+    placesEdit.classList.remove('places__form__open');
+} else {
+    placesEdit.classList.add('places__form__open');
+}
+}
+
+profilebtnplace.addEventListener('click', placesForm)
