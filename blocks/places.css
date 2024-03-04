@@ -11,6 +11,7 @@
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     column-gap: 17px;
     row-gap: 20px;
     border-radius: 10px;
@@ -61,6 +62,11 @@
     width: 21px;
     height: 19px;
     border: none;
+}
+
+.form__open {
+opacity: 1;
+pointer-events: visible;
 }
 
 @media screen and (max-width: 880px) {

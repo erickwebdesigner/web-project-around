@@ -1,3 +1,4 @@
+//Todos os itens de abertura e fechamento do  botão de formulário do profile para alteração do nome e da profissão
 const profbtn = document.querySelector('.profile__btn')
 const formEdit = document.querySelector('.form')
 const formclose = document.querySelector('.form__close')
@@ -42,3 +43,7 @@ formclose.addEventListener('click', closeForm);
 
 
 formElement.addEventListener('submit', handleSubmit);
+///////////////////////////////////////////////////////////////////////////////////////
+// Referente a abetura e fechamento do fomulário do botão de troca das imagens inserção de novas fotos
+// titulo das fotos
+

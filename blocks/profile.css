@@ -69,13 +69,13 @@
 
 
 
-.profile__sub:hover{
+.profile_places-btn:hover{
   transition: 0.2s;
   cursor: pointer;
   opacity: 60%;
 }
 
-.profile__sub{
+.profile_places-btn{
   width: 150px;
   height: 50px;
   border: 2px solid white;
@@ -100,7 +100,7 @@
     text-align: center;
     margin-bottom: 36px;
   }
-  .profile__sub{
+  .profile_places-btn{
     width: 282px;
     margin: auto;
   }
