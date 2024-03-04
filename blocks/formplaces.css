@@ -1,0 +1,155 @@
+.form__places {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  position: fixed;
+  flex-direction: column;
+  width: 430px;
+  height: 322px;
+  border: 1px;
+  justify-self: center;
+}
+
+.form__places-open {
+opacity: 1;
+pointer-events: visible;
+}
+
+
+.form__places-close:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  opacity: 60%;
+}
+
+input{
+width: 40px;
+height: 40px;
+}
+.form__places-close {
+  width: 40px;
+  height:40px;
+  border: 0px;
+  font-size: 40px;
+  color: #fff;
+  background-color: #000000;
+  margin-left: 420px;
+}
+
+.form__places-container {
+  display:flex;
+  flex-direction: column;
+  width: 430px;
+  height: 430px;
+  border: 1px solid #000000;
+  background: #fff;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.form__places-title {
+  margin: 34px auto 54px 36px;
+  width: 330px;
+  height: 23px;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  text-align: left;
+}
+
+.form__places-submit {
+  display: block;
+  width: 358px;
+  height: 50px;
+  border-radius: 2px;
+  margin: 0px auto 36px;
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+
+.form__places-local{
+  margin: 0px auto 54px 36px;
+  width: 358px;
+  height: 27.26px;
+  border: 0px;
+  border-bottom: 1px solid #545454;
+  color: #9c9999;
+}
+
+.form__places-link {
+  margin: 0px auto 54px 36px;
+  width: 358px;
+  height: 27.26px;
+  border: 0px;
+  border-bottom: 1px solid #545454;
+  color: #9c9999;
+}
+
+@media screen and (max-width: 880px) {
+  .form__places {
+   margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .form__places{
+   margin-left: 100px;
+  }
+}
+
+@media  screen and (max-width: 660px) {
+   .form__places{
+     margin: 0px 100px 0px;
+
+   }
+}
+
+
+@media screen and (max-width: 550px) {
+   .form__places {
+     margin: 0px 100px 0px 100px;
+   }
+   .form__places-close {
+     width: 26px;
+     height: 26px;
+     font-size: 26px;
+     margin-left: 250px;
+   }
+
+   .form__places-container {
+       width: 282px;
+       height: 322px;
+
+   }
+   .form__places-local{
+       width: 238px;
+       height: 26px;
+       margin: auto 22px 30px;
+   }
+   .form__places-link {
+       width: 238px;
+       height: 26px;
+       margin: auto 22px 46px;
+   }
+   .form__places-submit {
+       width: 238px;
+       height: 46px;
+   }
+}
+
+@media screen and (max-width: 420px) {
+ .form__places {
+   margin: 0px 40px 0px;
+ }
+}
+
+@media screen and (max-width: 350px) {
+ .form__places {
+   margin: 0px 30px 0px;
+ }
+}

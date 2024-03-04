@@ -4,23 +4,6 @@
     justify-content: center;
 }
 
-.places__form {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    position: fixed;
-    flex-direction: column;
-    width: 430px;
-    height: 322px;
-    border: 1px;
-    justify-self: center;
-}
-
-.places__form__open {
-    opacity: 1;
-    pointer-events: visible;
-}
-
 .places__box {
     margin: 0px 200px 50px;
     padding: 0px;
