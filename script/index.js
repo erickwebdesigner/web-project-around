@@ -46,3 +46,34 @@ formElement.addEventListener('submit', handleSubmit);
 ///////////////////////////////////////////////////////////////////////////////////////
 // Referente a abetura e fechamento do fomulário do botão de troca das imagens inserção de novas fotos
 // titulo das fotos
+const profbtnplaces = document.querySelector('.profile_places-btn')
+const placesEdit = document.querySelector('.form__places')
+const formplacesclose = document.querySelector('.form__places-close')
+
+const placesElement = document.querySelector('.form__places')
+
+function placesForm() {
+  if (placesEdit.classList.contains('form__places-open')) {
+    placesEdit.classList.remove('form__places-open');
+  } else {
+    placesEdit.classList.add('form__places-open');
+  }
+}
+
+function placesFormclose() {
+  placesEdit.classList.remove('form__places-open');
+}
+
+function placesHandleSubmit(event) {
+  event.preventDefault()
+  placesFormclose();
+}
+
+
+profbtnplaces.addEventListener('click', placesForm);
+
+
+formplacesclose.addEventListener('click', placesFormclose);
+
+
+placesElement.addEventListener('submit', placesHandleSubmit);
